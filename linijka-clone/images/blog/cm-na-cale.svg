@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg-grad-cm-cale" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B" />
+      <stop offset="50%" stop-color="#14213D" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+    <pattern id="grid-cm-cale" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow-card" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad-cm-cale)" />
+  <rect width="100%" height="100%" fill="url(#grid-cm-cale)" />
+
+  <!-- LEFT COLUMN: Editorial / Branding -->
+  <rect x="70" y="70" width="170" height="32" rx="16" fill="rgba(59, 130, 246, 0.15)" stroke="rgba(59, 130, 246, 0.4)" stroke-width="1.5" />
+  <text x="155" y="91" fill="#60A5FA" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1px" text-anchor="middle">TABELA PRZELICZEŃ</text>
+
+  <text x="70" y="160" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1px">Cm, mm i cale</text>
+  <text x="70" y="215" fill="#38BDF8" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="600">Pełny przelicznik 3w1</text>
+  
+  <text x="70" y="270" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400">Precyzyjne relacje metryczne i imperialne</text>
+
+  <!-- Quick formula pills -->
+  <g transform="translate(70, 310)">
+    <rect width="360" height="52" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(56, 189, 248, 0.3)" />
+    <text x="20" y="32" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="16" font-weight="700">1 cal = 2,54 cm = 25,4 mm</text>
+  </g>
+  <g transform="translate(70, 380)">
+    <rect width="360" height="52" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(52, 211, 153, 0.3)" />
+    <text x="20" y="32" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="16" font-weight="700">1 cm = 10 mm = 0,3937 cala</text>
+  </g>
+
+  <!-- Site Brand -->
+  <text x="70" y="570" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="18" font-weight="600">Linijka.onl — Linijka online 1:1</text>
+
+  <!-- RIGHT COLUMN: Tri-Unit Conversion Scale Diagram -->
+  <g transform="translate(480, 50)" filter="url(#shadow-card)">
+    <rect width="660" height="530" rx="16" fill="#0F172A" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1.5" />
+    
+    <!-- Title of Diagram -->
+    <text x="40" y="45" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Porównanie jednostek w skali 1:1</text>
+    <text x="40" y="68" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Wyrównanie skali imperialnej (inch) ze skalą metryczną (cm / mm)</text>
+
+    <!-- Scale 1: CAL / INCH (Top) -->
+    <g transform="translate(40, 95)">
+      <rect width="580" height="85" rx="8" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5" />
+      <text x="20" y="32" fill="#FBBF24" font-family="system-ui, sans-serif" font-size="13" font-weight="800">CALE (INCH / &quot;)</text>
+      <line x1="120" y1="85" x2="560" y2="85" stroke="#F59E0B" stroke-width="2" />
+      
+      <!-- 0 in -->
+      <line x1="140" y1="85" x2="140" y2="40" stroke="#FFFFFF" stroke-width="2" />
+      <text x="140" y="30" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">0&quot;</text>
+      
+      <!-- 1/4 in -->
+      <line x1="190" y1="85" x2="190" y2="68" stroke="#FDE68A" stroke-width="1.5" />
+      <!-- 1/2 in -->
+      <line x1="240" y1="85" x2="240" y2="55" stroke="#FDE68A" stroke-width="1.5" />
+      <text x="240" y="48" fill="#FDE68A" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">½</text>
+      <!-- 3/4 in -->
+      <line x1="290" y1="85" x2="290" y2="68" stroke="#FDE68A" stroke-width="1.5" />
+      
+      <!-- 1 in (Exactly at 2.54 cm -> x = 340) -->
+      <line x1="340" y1="85" x2="340" y2="35" stroke="#F59E0B" stroke-width="3" />
+      <text x="340" y="24" fill="#F59E0B" font-family="system-ui, sans-serif" font-size="16" font-weight="800" text-anchor="middle">1&quot;</text>
+      
+      <!-- 1.5 in -->
+      <line x1="440" y1="85" x2="440" y2="55" stroke="#FDE68A" stroke-width="1.5" />
+      
+      <!-- 2 in (x = 540) -->
+      <line x1="540" y1="85" x2="540" y2="35" stroke="#F59E0B" stroke-width="3" />
+      <text x="540" y="24" fill="#F59E0B" font-family="system-ui, sans-serif" font-size="16" font-weight="800" text-anchor="middle">2&quot;</text>
+    </g>
+
+    <!-- Scale 2: CENTYMETRY (Middle) -->
+    <g transform="translate(40, 205)">
+      <rect width="580" height="85" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+      <text x="20" y="32" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="13" font-weight="800">CENTYMETRY (CM)</text>
+      <line x1="120" y1="85" x2="560" y2="85" stroke="#38BDF8" stroke-width="2" />
+      
+      <!-- 0 cm (aligned with 0 in) -->
+      <line x1="140" y1="85" x2="140" y2="40" stroke="#FFFFFF" stroke-width="2" />
+      <text x="140" y="30" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">0 cm</text>
+      
+      <!-- 1 cm (x ~ 219) -->
+      <line x1="219" y1="85" x2="219" y2="52" stroke="#94A3B8" stroke-width="1.5" />
+      <text x="219" y="44" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">1</text>
+      
+      <!-- 2 cm (x ~ 297) -->
+      <line x1="297" y1="85" x2="297" y2="52" stroke="#94A3B8" stroke-width="1.5" />
+      <text x="297" y="44" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">2</text>
+      
+      <!-- 2.54 cm KEY ALIGNMENT MARK (x = 340) -->
+      <line x1="340" y1="85" x2="340" y2="35" stroke="#38BDF8" stroke-width="3" />
+      <text x="340" y="24" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">2,54 cm</text>
+      
+      <!-- 3 cm (x ~ 376) -->
+      <line x1="376" y1="85" x2="376" y2="52" stroke="#94A3B8" stroke-width="1.5" />
+      <text x="376" y="44" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">3</text>
+      
+      <!-- 4 cm (x ~ 455) -->
+      <line x1="455" y1="85" x2="455" y2="52" stroke="#94A3B8" stroke-width="1.5" />
+      <text x="455" y="44" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">4</text>
+      
+      <!-- 5 cm (x ~ 533) -->
+      <line x1="533" y1="85" x2="533" y2="52" stroke="#94A3B8" stroke-width="1.5" />
+      <text x="533" y="44" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">5</text>
+    </g>
+
+    <!-- Scale 3: MILIMETRY (Bottom) -->
+    <g transform="translate(40, 315)">
+      <rect width="580" height="85" rx="8" fill="#1E293B" stroke="#34D399" stroke-width="1.5" />
+      <text x="20" y="32" fill="#34D399" font-family="system-ui, sans-serif" font-size="13" font-weight="800">MILIMETRY (MM)</text>
+      <line x1="120" y1="85" x2="560" y2="85" stroke="#34D399" stroke-width="2" />
+      
+      <!-- 0 mm -->
+      <line x1="140" y1="85" x2="140" y2="40" stroke="#FFFFFF" stroke-width="2" />
+      <text x="140" y="30" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">0 mm</text>
+      
+      <!-- 10 mm -->
+      <line x1="219" y1="85" x2="219" y2="52" stroke="#6EE7B7" stroke-width="1.5" />
+      <text x="219" y="44" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">10</text>
+      
+      <!-- 20 mm -->
+      <line x1="297" y1="85" x2="297" y2="52" stroke="#6EE7B7" stroke-width="1.5" />
+      <text x="297" y="44" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">20</text>
+      
+      <!-- 25.4 mm KEY ALIGNMENT (x = 340) -->
+      <line x1="340" y1="85" x2="340" y2="35" stroke="#34D399" stroke-width="3" />
+      <text x="340" y="24" fill="#34D399" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">25,4 mm</text>
+      
+      <!-- 30 mm -->
+      <line x1="376" y1="85" x2="376" y2="52" stroke="#6EE7B7" stroke-width="1.5" />
+      <text x="376" y="44" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">30</text>
+      
+      <!-- 40 mm -->
+      <line x1="455" y1="85" x2="455" y2="52" stroke="#6EE7B7" stroke-width="1.5" />
+      <text x="455" y="44" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">40</text>
+      
+      <!-- 50 mm -->
+      <line x1="533" y1="85" x2="533" y2="52" stroke="#6EE7B7" stroke-width="1.5" />
+      <text x="533" y="44" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">50</text>
+    </g>
+
+    <!-- Vertical Alignment Beam linking 1 in = 2.54 cm = 25.4 mm -->
+    <line x1="380" y1="130" x2="380" y2="350" stroke="#F59E0B" stroke-width="2" stroke-dasharray="5 3" />
+    <circle cx="380" cy="180" r="4" fill="#F59E0B" />
+    <circle cx="380" cy="290" r="4" fill="#38BDF8" />
+    <circle cx="380" cy="400" r="4" fill="#34D399" />
+
+    <!-- Bottom summary banner -->
+    <g transform="translate(40, 420)">
+      <rect width="580" height="75" rx="8" fill="rgba(30, 41, 59, 0.7)" stroke="#475569" />
+      <text x="30" y="32" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Formuły szybkiego przeliczania:</text>
+      <text x="30" y="55" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="13">cale na cm: <tspan fill="#F8FAFC">wartość × 2,54</tspan></text>
+      <text x="210" y="55" fill="#34D399" font-family="system-ui, sans-serif" font-size="13">cm na mm: <tspan fill="#F8FAFC">wartość × 10</tspan></text>
+      <text x="380" y="55" fill="#FBBF24" font-family="system-ui, sans-serif" font-size="13">mm na cale: <tspan fill="#F8FAFC">wartość ÷ 25,4</tspan></text>
+    </g>
+  </g>
+</svg>

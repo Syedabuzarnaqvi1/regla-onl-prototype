@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg-grad-app" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+    <pattern id="grid-app" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow-app" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad-app)" />
+  <rect width="100%" height="100%" fill="url(#grid-app)" />
+
+  <!-- LEFT COLUMN: Editorial / Branding -->
+  <rect x="70" y="70" width="170" height="32" rx="16" fill="rgba(59, 130, 246, 0.15)" stroke="rgba(59, 130, 246, 0.4)" stroke-width="1.5" />
+  <text x="155" y="91" fill="#60A5FA" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1px" text-anchor="middle">PORÓWNANIE METOD</text>
+
+  <text x="70" y="160" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="800" letter-spacing="-1px">Aplikacja czy przeglądarka?</text>
+  <text x="70" y="215" fill="#34D399" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="600">Linijka w telefonie bez instalacji</text>
+  
+  <text x="70" y="270" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400">Analiza wygody, prywatności i pamięci urządzenia</text>
+
+  <!-- Comparison Summary Pills -->
+  <g transform="translate(70, 315)">
+    <rect width="360" height="52" rx="8" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.4)" />
+    <circle cx="28" cy="26" r="10" fill="#10B981" />
+    <path d="M 23 26 L 27 30 L 33 22" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    <text x="48" y="32" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Linijka online: 0 MB, brak uprawnień</text>
+  </g>
+  <g transform="translate(70, 385)">
+    <rect width="360" height="52" rx="8" fill="rgba(239, 68, 68, 0.12)" stroke="rgba(239, 68, 68, 0.3)" />
+    <circle cx="28" cy="26" r="10" fill="#EF4444" />
+    <line x1="23" y1="21" x2="33" y2="31" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    <line x1="33" y1="21" x2="23" y2="31" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    <text x="48" y="32" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="15" font-weight="600">Aplikacja ze sklepu: 45 MB, reklamy</text>
+  </g>
+
+  <!-- Site Brand -->
+  <text x="70" y="570" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="18" font-weight="600">Linijka.onl — Linijka online 1:1</text>
+
+  <!-- RIGHT COLUMN: Dual Device / Flow Graphic -->
+  <g transform="translate(480, 50)" filter="url(#shadow-app)">
+    <rect width="660" height="530" rx="16" fill="#0F172A" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1.5" />
+
+    <!-- Card 1: Browser Ruler (Recommended / Green Theme) -->
+    <g transform="translate(30, 40)">
+      <rect width="285" height="450" rx="14" fill="#1E293B" stroke="#10B981" stroke-width="2" />
+      
+      <!-- Card Badge -->
+      <rect x="20" y="20" width="130" height="26" rx="13" fill="rgba(16, 185, 129, 0.2)" />
+      <text x="85" y="37" fill="#34D399" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">PRZEGLĄDARKA</text>
+
+      <!-- Simulated Browser Bar -->
+      <g transform="translate(20, 60)">
+        <rect width="245" height="32" rx="6" fill="#0F172A" stroke="#334155" />
+        <circle cx="16" cy="16" r="4" fill="#10B981" />
+        <text x="30" y="21" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">https://www.linijka.onl</text>
+      </g>
+
+      <!-- Active Ruler Interface Preview -->
+      <g transform="translate(20, 105)">
+        <rect width="245" height="150" rx="8" fill="#0F172A" stroke="#334155" />
+        <!-- Ruler edge on left -->
+        <line x1="15" y1="15" x2="15" y2="135" stroke="#38BDF8" stroke-width="2" />
+        <!-- Ruler ticks -->
+        <line x1="15" y1="20" x2="40" y2="20" stroke="#FFFFFF" stroke-width="2" />
+        <text x="48" y="24" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="700">0</text>
+        <line x1="15" y1="45" x2="28" y2="45" stroke="#94A3B8" stroke-width="1.5" />
+        <line x1="15" y1="70" x2="35" y2="70" stroke="#FFFFFF" stroke-width="1.5" />
+        <text x="43" y="74" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="9">1</text>
+        <line x1="15" y1="95" x2="28" y2="95" stroke="#94A3B8" stroke-width="1.5" />
+        <line x1="15" y1="120" x2="40" y2="120" stroke="#FFFFFF" stroke-width="2" />
+        <text x="48" y="124" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="700">2 cm</text>
+        
+        <!-- Live status -->
+        <rect x="85" y="45" width="145" height="60" rx="6" fill="#1E293B" />
+        <text x="95" y="68" fill="#34D399" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Gotowa do pomiaru</text>
+        <text x="95" y="88" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10">Skala 1:1 aktywna natychmiast</text>
+      </g>
+
+      <!-- Feature checklist -->
+      <g transform="translate(25, 275)">
+        <text x="0" y="20" fill="#34D399" font-family="system-ui, sans-serif" font-size="13" font-weight="700">✓ 0 MB zajętej pamięci</text>
+        <text x="0" y="50" fill="#34D399" font-family="system-ui, sans-serif" font-size="13" font-weight="700">✓ Brak instalacji</text>
+        <text x="0" y="80" fill="#34D399" font-family="system-ui, sans-serif" font-size="13" font-weight="700">✓ Pełna prywatność (0 pozwoleń)</text>
+        <text x="0" y="110" fill="#34D399" font-family="system-ui, sans-serif" font-size="13" font-weight="700">✓ Zawsze aktualna wersja</text>
+      </g>
+    </g>
+
+    <!-- Card 2: App Store Download (Negative Comparison / Red/Gray Theme) -->
+    <g transform="translate(345, 40)">
+      <rect width="285" height="450" rx="14" fill="#1E293B" stroke="#475569" stroke-width="1.5" />
+      
+      <!-- Card Badge -->
+      <rect x="20" y="20" width="130" height="26" rx="13" fill="rgba(148, 163, 184, 0.15)" />
+      <text x="85" y="37" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">APLIKACJA SKLEP</text>
+
+      <!-- App Store Card Preview -->
+      <g transform="translate(20, 60)">
+        <rect width="245" height="85" rx="8" fill="#0F172A" stroke="#334155" />
+        <rect x="15" y="15" width="55" height="55" rx="12" fill="#334155" />
+        <path d="M 30 30 L 55 55 M 30 55 L 55 30" stroke="#64748B" stroke-width="3" />
+        <text x="82" y="35" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Linijka AR Pro</text>
+        <text x="82" y="55" fill="#EF4444" font-family="system-ui, sans-serif" font-size="11">Rozmiar: 48,5 MB</text>
+        <!-- Download button -->
+        <rect x="175" y="45" width="60" height="24" rx="12" fill="#2563EB" />
+        <text x="205" y="61" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">Pobierz</text>
+      </g>
+
+      <!-- App Permission Alert Box -->
+      <g transform="translate(20, 160)">
+        <rect width="245" height="95" rx="8" fill="#0F172A" stroke="#DC2626" stroke-width="1" />
+        <text x="15" y="25" fill="#EF4444" font-family="system-ui, sans-serif" font-size="11" font-weight="800">Wymagane uprawnienia:</text>
+        <text x="15" y="46" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10">• Dostęp do aparatu (kamera)</text>
+        <text x="15" y="64" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10">• Lokalizacja urządzenia</text>
+        <text x="15" y="82" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10">• Śledzenie reklamowe (IDFA)</text>
+      </g>
+
+      <!-- Disadvantages list -->
+      <g transform="translate(25, 275)">
+        <text x="0" y="20" fill="#EF4444" font-family="system-ui, sans-serif" font-size="13" font-weight="700">✕ Pobiera pamięć telefonu</text>
+        <text x="0" y="50" fill="#EF4444" font-family="system-ui, sans-serif" font-size="13" font-weight="700">✕ Wymaga logowania lub konta</text>
+        <text x="0" y="80" fill="#EF4444" font-family="system-ui, sans-serif" font-size="13" font-weight="700">✕ Agresywne reklamy pełnoekranowe</text>
+        <text x="0" y="110" fill="#EF4444" font-family="system-ui, sans-serif" font-size="13" font-weight="700">✕ Płatne subskrypcje tygodniowe</text>
+      </g>
+    </g>
+  </g>
+</svg>

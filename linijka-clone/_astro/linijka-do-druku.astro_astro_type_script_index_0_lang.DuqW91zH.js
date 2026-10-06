@@ -1,0 +1,1 @@
+import{a as n}from"./ruler.CmN1V0ek.js";document.querySelectorAll(".print-ruler-svg").forEach(e=>{const t=parseInt(e.dataset.length||"10");e.innerHTML=n(t)});document.getElementById("btn-print")?.addEventListener("click",()=>{window.print()});document.getElementById("btn-download-pdf")?.addEventListener("click",()=>{window.print()});
