@@ -1,6 +1,19 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/linijka-clone/index.html" }
+    { "source": "/", "destination": "/linijka-clone/index.html" },
+    { "source": "/blog", "destination": "/linijka-clone/blog/index.html" },
+    { "source": "/blog/:slug", "destination": "/linijka-clone/blog/:slug/index.html" },
+    { "source": "/imprimir", "destination": "/linijka-clone/imprimir/index.html" },
+    { "source": "/sobre-nosotros", "destination": "/linijka-clone/sobre-nosotros/index.html" },
+    { "source": "/contacto", "destination": "/linijka-clone/contacto/index.html" },
+    { "source": "/privacy", "destination": "/linijka-clone/privacy/index.html" },
+    { "source": "/disclaimer", "destination": "/linijka-clone/disclaimer/index.html" },
+    { "source": "/images/:path*", "destination": "/linijka-clone/images/:path*" },
+    { "source": "/regla-assets/:path*", "destination": "/linijka-clone/regla-assets/:path*" },
+    { "source": "/lovable-uploads/:path*", "destination": "/linijka-clone/lovable-uploads/:path*" },
+    { "source": "/_astro/:path*", "destination": "/linijka-clone/_astro/:path*" },
+    { "source": "/favicon.svg", "destination": "/linijka-clone/favicon.svg" },
+    { "source": "/cdn-cgi/:path*", "destination": "/linijka-clone/cdn-cgi/:path*" }
   ],
   "headers": [
     {
