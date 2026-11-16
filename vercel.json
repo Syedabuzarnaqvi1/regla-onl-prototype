@@ -56,5 +56,20 @@
       "source": "/cdn-cgi/:path*",
       "destination": "/linijka-clone/cdn-cgi/:path*"
     }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "host",
+          "value": { "suf": ".vercel.app" }
+        }
+      ],
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    }
   ]
 }
