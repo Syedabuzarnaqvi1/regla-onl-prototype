@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    { "source": "/kontakt", "destination": "/contacto", "permanent": true },
+    { "source": "/linijka-do-druku", "destination": "/imprimir", "permanent": true },
+    { "source": "/o-nas", "destination": "/sobre-nosotros", "permanent": true },
+    { "source": "/polityka-prywatnosci", "destination": "/privacy", "permanent": true },
+    { "source": "/regulamin", "destination": "/disclaimer", "permanent": true }
+  ],
   "rewrites": [
     {
       "source": "/",
